@@ -8,10 +8,13 @@
     "server": "cd server && npm run dev",
     "client": "cd client && npm run dev",
     "dev": "concurrently -n \"SERVER,CLIENT\" -c \"cyan,magenta\" \"npm run server\" \"npm run client\"",
-    "build": "cd client && npm run build"
+    "build": "cd client && npm run build",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d client/dist -b gh-pages --nojekyll"
   },
   "devDependencies": {
-    "concurrently": "^8.2.2"
+    "concurrently": "^8.2.2",
+    "gh-pages": "^6.3.0"
   },
   "keywords": [
     "mern",
