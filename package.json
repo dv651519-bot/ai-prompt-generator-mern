@@ -1,0 +1,26 @@
+{
+  "name": "ai-prompt-generator-mern",
+  "version": "1.0.0",
+  "description": "Production-ready AI Prompt Generator built with the MERN stack, Tailwind CSS, and Framer Motion",
+  "private": true,
+  "scripts": {
+    "setup": "npm install && cd server && npm install && cd ../client && npm install",
+    "server": "cd server && npm run dev",
+    "client": "cd client && npm run dev",
+    "dev": "concurrently -n \"SERVER,CLIENT\" -c \"cyan,magenta\" \"npm run server\" \"npm run client\"",
+    "build": "cd client && npm run build"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  },
+  "keywords": [
+    "mern",
+    "ai-prompt-generator",
+    "tailwind",
+    "framer-motion",
+    "express",
+    "mongoose"
+  ],
+  "author": "",
+  "license": "MIT"
+}
